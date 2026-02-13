@@ -1,1 +1,184 @@
-xfnbf
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Bar | O Ponto de Encontro</title>
+    <style>
+        /* Configurações Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho e Navegação */
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 2px solid #d4a017;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #d4a017;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #d4a017;
+        }
+
+        /* Seção Hero (Banner) */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=2070') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .btn {
+            background-color: #d4a017;
+            color: #000;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+        }
+
+        /* Seções de Conteúdo */
+        section {
+            padding: 4rem 10%;
+            text-align: center;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: #262626;
+            padding: 2rem;
+            border-radius: 10px;
+            border-bottom: 4px solid #d4a017;
+        }
+
+        .card h3 {
+            color: #d4a017;
+            margin-bottom: 1rem;
+        }
+
+        /* Rodapé */
+        footer {
+            background: #000;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            nav { display: none; } /* Simplicidade para mobile */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">O Barril de Ouro</div>
+        <nav>
+            <a href="#sobre">O Bar</a>
+            <a href="#cardapio">Destaques</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Bons momentos começam aqui.</h1>
+        <p>A melhor experiência em coquetelaria, cervejas artesanais e petiscos selecionados da região.</p>
+        <a href="#contato" class="btn">RESERVE UMA MESA</a>
+    </section>
+
+    <section id="sobre">
+        <h2>A Arte de Receber</h2>
+        <p style="max-width: 800px; margin: 1rem auto;">Como dono, meu compromisso é garantir que cada brinde seja especial. Nosso ambiente foi pensado para quem valoriza boa música, atendimento de primeira e, claro, um copo sempre cheio.</p>
+        
+        <div class="features">
+            <div class="card">
+                <h3>Drinks Autorais</h3>
+                <p>Receitas exclusivas criadas pelos nossos melhores bartenders.</p>
+            </div>
+            <div class="card">
+                <h3>Cerveja Gelada</h3>
+                <p>Uma seleção rigorosa de rótulos artesanais e as clássicas pilsens.</p>
+            </div>
+            <div class="card">
+                <h3>Petiscos Premium</h3>
+                <p>Culinária de boteco elevada a outro nível de sabor.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" style="background-color: #262626;">
+        <h2>Onde nos Encontrar</h2>
+        <p>Rua da Boemia, 123 - Centro</p>
+        <p>Aberto de Terça a Domingo, das 18h às 02h</p>
+        <br>
+        <p><strong>WhatsApp:</strong> (11) 98765-4321</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 O Barril de Ouro - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>html>
