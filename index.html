@@ -115,116 +115,28 @@
         .section-subtitle {
             text-align: center;
             color: var(--text-gray);
-            margin-bottom: 100px;
-            font-size: 1.3rem;
-            text-transform: uppercase;
-            letter-spacing: 6px;
-        }
+<section style="background: var(--dark-bg); padding: 100px 0; border-top: 1px solid var(--accent);">
+    <div class="container" style="padding: 0 20px;">
+        <h2 class="section-title">O Mercado</h2>
+        <p class="section-subtitle">Perspectivas para Novos Talentos</p>
 
-        /* --- CONTEÚDO --- */
-        .about-text {
-            font-size: 1.3rem;
-            column-count: 2;
-            column-gap: 80px;
-            text-align: justify;
-            margin-bottom: 150px;
-            color: var(--text-gray);
-        }
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px;">
+            
+            <div style="background: var(--card-bg); padding: 40px; border-bottom: 4px solid var(--gold); text-align: center;">
+                <p style="text-transform: uppercase; letter-spacing: 3px; color: var(--text-gray); font-size: 0.9rem;">Média Salarial (Senior)</p>
+                <h4 style="font-family: 'Playfair Display', serif; font-size: 3rem; color: var(--gold); margin: 15px 0;">R$ 4.500</h4>
+                <p style="font-size: 0.85rem; color: #666; font-style: italic;">*Valores baseados em estabelecimentos de alto padrão, excluindo gratificações (service charge).</p>
+            </div>
 
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 50px;
-            margin-bottom: 150px;
-        }
+            <div style="background: var(--card-bg); padding: 40px; border-bottom: 4px solid var(--gold); text-align: center;">
+                <p style="text-transform: uppercase; letter-spacing: 3px; color: var(--text-gray); font-size: 0.9rem;">Nota de Corte ENEM</p>
+                <h4 style="font-family: 'Playfair Display', serif; font-size: 3rem; color: var(--gold); margin: 15px 0;">640 - 710</h4>
+                <p style="font-size: 0.85rem; color: #666; font-style: italic;">*Referência para cursos de Gastronomia e Hotelaria em universidades federais via Sisu.</p>
+            </div>
 
-        .service-item {
-            background: var(--accent);
-            padding: 60px;
-            border-left: 8px solid var(--gold);
-            transition: 0.4s ease;
-        }
-
-        .service-item h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: var(--gold);
-            margin-bottom: 20px;
-        }
-
-        /* --- GALERIA --- */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-            gap: 40px;
-        }
-
-        .gallery-img {
-            width: 100%;
-            height: 600px;
-            object-fit: cover;
-            border: 1px solid #333;
-            transition: 0.6s ease;
-        }
-
-        footer {
-            background: #000;
-            padding: 120px 20px 60px;
-            border-top: 1px solid #222;
-            text-align: center;
-        }
-
-        .footer-logo {
-            font-family: 'Playfair Display', serif;
-            color: var(--gold);
-            font-size: 3.5rem;
-            letter-spacing: 8px;
-        }
-
-        @media (max-width: 900px) {
-            .about-text { column-count: 1; }
-            .brand-name { left: 20px; top: 20px; font-size: 1.4rem; }
-            .history-seal { right: 20px; top: 25px; font-size: 1rem; }
-            header { height: 70vh; }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="brand-name">Lucas Hunhoff</div>
-    <div class="history-seal">50 Anos de História</div>
-
-    <header>
-        <h1>Bário de Ouro</h1>
-        <p>A CIÊNCIA DA HOSPITALIDADE</p>
-    </header>
-
-    <div class="container">
-        
-        <h2 class="section-title">O Legado</h2>
-        <p class="section-subtitle">Meio Século de Tradição e Inovação</p>
-        
-        <div class="about-text">
-            Sob a visão estratégica de <strong>Lucas Hunhoff</strong>, o Bário de Ouro carrega o peso de 50 anos de história no setor de hospitalidade. Não somos apenas uma consultoria; somos os guardiões de um conhecimento acumulado por décadas, lapidado para a realidade do mercado de 2026. 
-            <br><br>
-            Unimos a solidez da tradição à precisão da matemática moderna. No Bário de Ouro, cada projeto é tratado como uma joia única, onde a experiência sensorial do cliente e a lucratividade do investidor caminham em absoluta harmonia.
         </div>
-
-        <h2 class="section-title">Especialidades</h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <h3>Arquitetura de Lucro</h3>
-                <p>Engenharia financeira de cardápios e processos que garantem a saúde do seu patrimônio.</p>
-            </div>
-            <div class="service-item">
-                <h3>Curadoria de Estilo</h3>
-                <p>Ambientes que narram histórias e otimizam a fluidez operacional com elegância extrema.</p>
-            </div>
-            <div class="service-item">
-                <h3>Treinamento de Elite</h3>
-                <p>Capacitação técnica para que o serviço do seu estabelecimento seja memorável e impecável.</p>
-            </div>
-        </div>
+    </div>
+</section>
 
         <h2 class="section-title">Portfólio</h2>
         <div class="gallery-grid">
