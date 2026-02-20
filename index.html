@@ -25,21 +25,39 @@
             line-height: 1.9;
         }
 
-        /* --- NOME LUCAS HUNHOFF EM DESTAQUE --- */
+        /* --- ASSINATURA LUCAS HUNHOFF --- */
         .brand-name {
             position: absolute;
             top: 40px;
             left: 50px;
             color: var(--gold);
             font-family: 'Playfair Display', serif;
-            font-size: 2.2rem; /* Tamanho aumentado */
-            font-weight: 900; /* Peso máximo para destaque */
+            font-size: 2.2rem;
+            font-weight: 900;
             letter-spacing: 4px;
             text-transform: uppercase;
             z-index: 10;
             line-height: 1;
-            border-left: 6px solid var(--gold); /* Barra vertical para elegância */
+            border-left: 6px solid var(--gold);
             padding-left: 20px;
+            text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+        }
+
+        /* --- SELO DE HISTÓRIA --- */
+        .history-seal {
+            position: absolute;
+            top: 40px;
+            right: 50px;
+            color: var(--gold);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            z-index: 10;
+            text-align: right;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 5px;
             text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
         }
 
@@ -49,7 +67,7 @@
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
-            height: 90vh; /* Aumentado para preencher a visão */
+            height: 90vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -61,7 +79,7 @@
 
         header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(3.5rem, 12vw, 7.5rem); /* Títulos ainda maiores */
+            font-size: clamp(3.5rem, 12vw, 7.5rem);
             margin: 0;
             color: var(--gold);
             letter-spacing: 20px;
@@ -81,7 +99,7 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 150px 20px; /* Mais espaço entre o header e o conteúdo */
+            padding: 150px 20px;
         }
 
         /* --- TÍTULOS DE SEÇÃO --- */
@@ -89,7 +107,7 @@
             font-family: 'Playfair Display', serif;
             text-align: center;
             color: var(--gold);
-            font-size: clamp(3rem, 10vw, 5rem); /* Aumentado */
+            font-size: clamp(3rem, 10vw, 5rem);
             margin-bottom: 30px;
             letter-spacing: -2px;
         }
@@ -124,14 +142,13 @@
             background: var(--accent);
             padding: 60px;
             border-left: 8px solid var(--gold);
-            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: 0.4s ease;
         }
 
         .service-item h3 {
             font-family: 'Playfair Display', serif;
             font-size: 2.5rem;
             color: var(--gold);
-            margin-top: 0;
             margin-bottom: 20px;
         }
 
@@ -150,11 +167,6 @@
             transition: 0.6s ease;
         }
 
-        .gallery-img:hover {
-            border-color: var(--gold);
-            filter: brightness(1.1);
-        }
-
         footer {
             background: #000;
             padding: 120px 20px 60px;
@@ -171,14 +183,16 @@
 
         @media (max-width: 900px) {
             .about-text { column-count: 1; }
-            .brand-name { left: 20px; top: 20px; font-size: 1.5rem; border-left-width: 4px; }
-            .gallery-grid { grid-template-columns: 1fr; }
+            .brand-name { left: 20px; top: 20px; font-size: 1.4rem; }
+            .history-seal { right: 20px; top: 25px; font-size: 1rem; }
+            header { height: 70vh; }
         }
     </style>
 </head>
 <body>
 
     <div class="brand-name">Lucas Hunhoff</div>
+    <div class="history-seal">50 Anos de História</div>
 
     <header>
         <h1>Bário de Ouro</h1>
@@ -188,27 +202,27 @@
     <div class="container">
         
         <h2 class="section-title">O Legado</h2>
-        <p class="section-subtitle">Gestão Estratégica & Performance</p>
+        <p class="section-subtitle">Meio Século de Tradição e Inovação</p>
         
         <div class="about-text">
-            Sob a visão de <strong>Lucas Hunhoff</strong>, o Bário de Ouro redefine o conceito de consultoria em hospitalidade. Não entregamos apenas relatórios; entregamos a maestria da operação. Cada detalhe, desde o custo invisível até a experiência sensorial do cliente, é analisado e otimizado. 
+            Sob a visão estratégica de <strong>Lucas Hunhoff</strong>, o Bário de Ouro carrega o peso de 50 anos de história no setor de hospitalidade. Não somos apenas uma consultoria; somos os guardiões de um conhecimento acumulado por décadas, lapidado para a realidade do mercado de 2026. 
             <br><br>
-            Acreditamos que o sucesso de um empreendimento é o reflexo direto de uma gestão lapidada. Em 2026, Lucas Hunhoff continua a elevar o padrão de bares e restaurantes, unindo sofisticação estética a uma lucratividade matemática impecável.
+            Unimos a solidez da tradição à precisão da matemática moderna. No Bário de Ouro, cada projeto é tratado como uma joia única, onde a experiência sensorial do cliente e a lucratividade do investidor caminham em absoluta harmonia.
         </div>
 
         <h2 class="section-title">Especialidades</h2>
         <div class="services-grid">
             <div class="service-item">
                 <h3>Arquitetura de Lucro</h3>
-                <p>Otimização de cardápios e processos de compra que transformam desperdício em dividendos.</p>
+                <p>Engenharia financeira de cardápios e processos que garantem a saúde do seu patrimônio.</p>
             </div>
             <div class="service-item">
                 <h3>Curadoria de Estilo</h3>
-                <p>Ambientes projetados para inspirar desejo, conforto e uma fluidez operacional sem precedentes.</p>
+                <p>Ambientes que narram histórias e otimizam a fluidez operacional com elegância extrema.</p>
             </div>
             <div class="service-item">
                 <h3>Treinamento de Elite</h3>
-                <p>Capacitação técnica de equipes para que cada interação com o cliente seja uma entrega de luxo.</p>
+                <p>Capacitação técnica para que o serviço do seu estabelecimento seja memorável e impecável.</p>
             </div>
         </div>
 
@@ -221,7 +235,7 @@
 
     <footer>
         <div class="footer-logo">BÁRIO DE OURO</div>
-        <p style="color: var(--text-gray); margin: 25px 0 50px; font-size: 1.2rem; letter-spacing: 3px;">BY LUCAS HUNHOFF</p>
+        <p style="color: var(--text-gray); margin: 25px 0 50px; font-size: 1.2rem; letter-spacing: 3px;">MEIO SÉCULO DE EXCELÊNCIA</p>
         <div style="display: flex; justify-content: center; gap: 40px; color: var(--gold); font-weight: bold; letter-spacing: 4px; font-size: 0.9rem;">
             <span>INSTAGRAM</span>
             <span>LINKEDIN</span>
@@ -234,3 +248,4 @@
 
 </body>
 </html>
+axca
