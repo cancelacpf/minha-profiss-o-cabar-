@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Hunhoff | Bário de Ouro</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --gold: #d4af37;
@@ -25,59 +25,63 @@
             line-height: 1.9;
         }
 
-        /* --- NOME DESTACADO --- */
+        /* --- NOME LUCAS HUNHOFF EM DESTAQUE --- */
         .brand-name {
             position: absolute;
-            top: 30px;
-            left: 40px;
+            top: 40px;
+            left: 50px;
             color: var(--gold);
             font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            letter-spacing: 3px;
+            font-size: 2.2rem; /* Tamanho aumentado */
+            font-weight: 900; /* Peso máximo para destaque */
+            letter-spacing: 4px;
             text-transform: uppercase;
             z-index: 10;
-            border-bottom: 2px solid var(--gold);
-            padding-bottom: 5px;
+            line-height: 1;
+            border-left: 6px solid var(--gold); /* Barra vertical para elegância */
+            padding-left: 20px;
+            text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
         }
 
-        /* --- HEADER MAXIMIZADO --- */
+        /* --- HEADER --- */
         header {
             background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgLEqbxtU1sWV_qbODpvJz-4jDGyVcCCyixw&s');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
-            height: 85vh;
+            height: 90vh; /* Aumentado para preencher a visão */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            border-bottom: 8px solid var(--gold);
+            border-bottom: 10px solid var(--gold);
             position: relative;
         }
 
         header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(3rem, 10vw, 6rem); /* Tamanho responsivo e gigante */
+            font-size: clamp(3.5rem, 12vw, 7.5rem); /* Títulos ainda maiores */
             margin: 0;
             color: var(--gold);
-            letter-spacing: 15px;
+            letter-spacing: 20px;
             text-transform: uppercase;
-            line-height: 1;
+            line-height: 0.9;
         }
 
         header p {
             color: white;
-            font-size: 1.5rem;
-            letter-spacing: 5px;
-            margin-top: 25px;
+            font-size: 1.6rem;
+            letter-spacing: 8px;
+            margin-top: 30px;
             font-weight: 300;
+            opacity: 0.9;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 120px 20px;
+            padding: 150px 20px; /* Mais espaço entre o header e o conteúdo */
         }
 
         /* --- TÍTULOS DE SEÇÃO --- */
@@ -85,74 +89,75 @@
             font-family: 'Playfair Display', serif;
             text-align: center;
             color: var(--gold);
-            font-size: clamp(2.5rem, 8vw, 4rem);
-            margin-bottom: 20px;
-            letter-spacing: -1px;
+            font-size: clamp(3rem, 10vw, 5rem); /* Aumentado */
+            margin-bottom: 30px;
+            letter-spacing: -2px;
         }
 
         .section-subtitle {
             text-align: center;
             color: var(--text-gray);
-            margin-bottom: 80px;
-            font-size: 1.1rem;
+            margin-bottom: 100px;
+            font-size: 1.3rem;
             text-transform: uppercase;
-            letter-spacing: 4px;
+            letter-spacing: 6px;
         }
 
         /* --- CONTEÚDO --- */
         .about-text {
-            font-size: 1.25rem;
+            font-size: 1.3rem;
             column-count: 2;
-            column-gap: 60px;
+            column-gap: 80px;
             text-align: justify;
-            margin-bottom: 120px;
+            margin-bottom: 150px;
             color: var(--text-gray);
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
-            margin-bottom: 120px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+            margin-bottom: 150px;
         }
 
         .service-item {
             background: var(--accent);
-            padding: 50px;
-            border-left: 5px solid var(--gold);
-            transition: 0.4s;
+            padding: 60px;
+            border-left: 8px solid var(--gold);
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         .service-item h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             color: var(--gold);
             margin-top: 0;
+            margin-bottom: 20px;
         }
 
         /* --- GALERIA --- */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 40px;
         }
 
         .gallery-img {
             width: 100%;
-            height: 500px;
+            height: 600px;
             object-fit: cover;
             border: 1px solid #333;
-            transition: 0.5s;
+            transition: 0.6s ease;
         }
 
         .gallery-img:hover {
             border-color: var(--gold);
-            transform: scale(1.01);
+            filter: brightness(1.1);
         }
 
         footer {
             background: #000;
-            padding: 100px 20px 40px;
+            padding: 120px 20px 60px;
             border-top: 1px solid #222;
             text-align: center;
         }
@@ -160,13 +165,14 @@
         .footer-logo {
             font-family: 'Playfair Display', serif;
             color: var(--gold);
-            font-size: 2.8rem;
-            letter-spacing: 5px;
+            font-size: 3.5rem;
+            letter-spacing: 8px;
         }
 
         @media (max-width: 900px) {
             .about-text { column-count: 1; }
-            .brand-name { left: 20px; font-size: 1.1rem; }
+            .brand-name { left: 20px; top: 20px; font-size: 1.5rem; border-left-width: 4px; }
+            .gallery-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -182,27 +188,27 @@
     <div class="container">
         
         <h2 class="section-title">O Legado</h2>
-        <p class="section-subtitle">Excelência sob a gestão de Lucas Hunhoff.</p>
+        <p class="section-subtitle">Gestão Estratégica & Performance</p>
         
         <div class="about-text">
-            No <strong>Bário de Ouro</strong>, acreditamos que a verdadeira hospitalidade é um metal nobre, resistente ao tempo e de valor inestimável. Sob a liderança estratégica de <strong>Lucas Hunhoff</strong>, nossa consultoria transforma estabelecimentos em ícones de mercado.
+            Sob a visão de <strong>Lucas Hunhoff</strong>, o Bário de Ouro redefine o conceito de consultoria em hospitalidade. Não entregamos apenas relatórios; entregamos a maestria da operação. Cada detalhe, desde o custo invisível até a experiência sensorial do cliente, é analisado e otimizado. 
             <br><br>
-            Desde a análise minuciosa de custos até o treinamento da postura de atendimento, cada detalhe é lapidado. Em 2026, consolidamos o extraordinário, garantindo que cada empreendimento alcance o topo do setor de luxo e eficiência.
+            Acreditamos que o sucesso de um empreendimento é o reflexo direto de uma gestão lapidada. Em 2026, Lucas Hunhoff continua a elevar o padrão de bares e restaurantes, unindo sofisticação estética a uma lucratividade matemática impecável.
         </div>
 
-        <h2 class="section-title">Nossas Vertentes</h2>
+        <h2 class="section-title">Especialidades</h2>
         <div class="services-grid">
             <div class="service-item">
                 <h3>Arquitetura de Lucro</h3>
-                <p>Engenharia de cardápio e precificação estratégica para garantir margens saudáveis com alto valor percebido.</p>
+                <p>Otimização de cardápios e processos de compra que transformam desperdício em dividendos.</p>
             </div>
             <div class="service-item">
                 <h3>Curadoria de Estilo</h3>
-                <p>Design de ambientes que comunicam poder, otimizando o fluxo de clientes e a eficiência operacional.</p>
+                <p>Ambientes projetados para inspirar desejo, conforto e uma fluidez operacional sem precedentes.</p>
             </div>
             <div class="service-item">
                 <h3>Treinamento de Elite</h3>
-                <p>Desenvolvimento de equipes de alto desempenho baseadas nas melhores práticas internacionais de serviço.</p>
+                <p>Capacitação técnica de equipes para que cada interação com o cliente seja uma entrega de luxo.</p>
             </div>
         </div>
 
@@ -215,13 +221,13 @@
 
     <footer>
         <div class="footer-logo">BÁRIO DE OURO</div>
-        <p style="color: var(--text-gray); margin: 20px 0 40px;">GESTÃO POR LUCAS HUNHOFF</p>
-        <div style="display: flex; justify-content: center; gap: 30px; color: var(--gold); font-weight: bold; letter-spacing: 2px; font-size: 0.8rem;">
+        <p style="color: var(--text-gray); margin: 25px 0 50px; font-size: 1.2rem; letter-spacing: 3px;">BY LUCAS HUNHOFF</p>
+        <div style="display: flex; justify-content: center; gap: 40px; color: var(--gold); font-weight: bold; letter-spacing: 4px; font-size: 0.9rem;">
             <span>INSTAGRAM</span>
             <span>LINKEDIN</span>
             <span>WHATSAPP</span>
         </div>
-        <p style="margin-top: 60px; color: #333; font-size: 0.7rem; letter-spacing: 2px;">
+        <p style="margin-top: 80px; color: #333; font-size: 0.8rem; letter-spacing: 3px;">
             &copy; 2026 BÁRIO DE OURO - TODOS OS DIREITOS RESERVADOS
         </p>
     </footer>
