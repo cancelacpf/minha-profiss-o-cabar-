@@ -46,19 +46,27 @@
         /* Galeria */
         .main-image {
             width: 100%;
+            height: 400px;
+            object-fit: cover;
             border-radius: 15px;
             border: 2px solid #d4af37;
             margin-bottom: 20px;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
         }
         .gallery-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
         }
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #d4af37;
+        }
         .placeholder-img {
             background: #222;
-            height: 150px;
+            height: 200px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -78,34 +86,35 @@
 
     <header>
         <h1>BÁRIO DE OURO</h1>
-        <p>Gestão de Excelência em Bares</p>
+        <p>Excelência e Gestão em Hospitalidade</p>
     </header>
 
     <div class="container">
-        <img class="main-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgLEqbxtU1sWV_qbODpvJz-4jDGyVcCCyixw&s" alt="Interior do Bário de Ouro">
+        <img class="main-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgLEqbxtU1sWV_qbODpvJz-4jDGyVcCCyixw&s" alt="Interior Bário de Ouro">
 
         <div class="info-grid">
             <div class="card">
                 <h3>💰 Carreira e Salário</h3>
-                <p>Média de remuneração para proprietários em 2026:</p>
+                <p>Média salarial para donos de bar em 2026:</p>
                 <strong>R$ 2.753,00 a R$ 4.986,00</strong>
             </div>
             <div class="card">
                 <h3>🎓 Ingresso (ENEM)</h3>
-                <p>Nota de corte para Gastronomia/Gestão:</p>
+                <p>Nota de corte média para cursos da área:</p>
                 <strong>520 — 580 Pontos</strong>
             </div>
         </div>
 
-        <h2 style="color: #d4af37; border-left: 5px solid #d4af37; padding-left: 15px;">Galeria Adicional</h2>
+        <h2 style="color: #d4af37; border-left: 5px solid #d4af37; padding-left: 15px; margin-bottom: 20px;">Destaques do Bar</h2>
         <div class="gallery-grid">
-            <div class="placeholder-img">Foto do Balcão</div>
-            <div class="placeholder-img">Foto da Fachada</div>
+            <img class="gallery-img" src="https://img.freepik.com/fotos-premium/interior-moderno-com-balcao-de-bar-de-madeira_670147-18654.jpg" alt="Balcão de Madeira Moderno">
+            
+            <div class="placeholder-img">Espaço para Foto 3</div>
         </div>
     </div>
 
     <footer>
-        &copy; 2026 Bário de Ouro - Desenvolvido para Profissionais de Bar
+        &copy; 2026 Bário de Ouro - Todos os direitos reservados.
     </footer>
 
 </body>
