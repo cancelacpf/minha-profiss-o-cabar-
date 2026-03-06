@@ -148,7 +148,6 @@
             margin-bottom: 20px;
         }
 
-        /* --- NOVA SEÇÃO DE DADOS --- */
         .market-data {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -192,6 +191,57 @@
             border: 1px solid #333;
         }
 
+        /* --- ESTILIZAÇÃO DA BARRA DE OPINIÃO --- */
+        .opinion-section {
+            background-color: #050505;
+            padding: 100px 20px;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        .search-bar-container {
+            max-width: 800px;
+            margin: 40px auto 0;
+            display: flex;
+            border: 1px solid var(--gold);
+            padding: 5px;
+            background: rgba(255, 255, 255, 0.02);
+            transition: transform 0.3s ease;
+        }
+
+        .search-bar-container:focus-within {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+        }
+
+        .search-bar-container input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            padding: 20px 25px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            outline: none;
+        }
+
+        .search-bar-container button {
+            background: var(--gold);
+            color: black;
+            border: none;
+            padding: 0 40px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .search-bar-container button:hover {
+            background: #fff;
+        }
+
         footer {
             background: #000;
             padding: 120px 20px 60px;
@@ -211,6 +261,8 @@
             .brand-name { left: 20px; top: 20px; font-size: 1.4rem; }
             .history-seal { right: 20px; top: 25px; font-size: 1rem; }
             header { height: 70vh; }
+            .search-bar-container { flex-direction: column; }
+            .search-bar-container button { padding: 15px; }
         }
     </style>
 </head>
@@ -271,20 +323,20 @@
                 <p style="color: #666; font-size: 0.8rem;">*Referência para ingresso em Universidades Federais (Sisu)</p>
             </div>
         </div>
-        </div>
+    </div>
+
+    <section class="opinion-section">
+        <h2 class="section-title" style="font-size: 2.5rem;">Sua Experiência</h2>
+        <p class="section-subtitle" style="margin-bottom: 20px;">Deixe sua opinião sobre o site</p>
+        
+        <form class="search-bar-container" onsubmit="event.preventDefault(); alert('Agradecemos sua valiosa opinião!'); this.reset();">
+            <input type="text" placeholder="Escreva aqui seu feedback..." required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
     <footer>
         <div class="footer-logo">BÁRIO DE OURO</div>
         <p style="color: var(--text-gray); margin: 25px 0 50px; font-size: 1.2rem; letter-spacing: 3px;">MEIO SÉCULO DE EXCELÊNCIA</p>
         <div style="display: flex; justify-content: center; gap: 40px; color: var(--gold); font-weight: bold; letter-spacing: 4px; font-size: 0.9rem;">
             <span>INSTAGRAM</span>
-            <span>LINKEDIN</span>
-            <span>WHATSAPP</span>
-        </div>
-        <p style="margin-top: 80px; color: #333; font-size: 0.8rem; letter-spacing: 3px;">
-            &copy; 2026 BÁRIO DE OURO - TODOS OS DIREITOS RESERVADOS
-        </p>
-    </footer>
-
-</body>
-</html>
